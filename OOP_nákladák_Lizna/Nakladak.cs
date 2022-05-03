@@ -27,6 +27,7 @@ namespace OOP_nákladák_Lizna
             palivo = 0;
             celkova_vzdalenost = 0;
             Objem_nadrzre = 2000;
+            Spotreba_nadrze = 1;
         }
     }
   

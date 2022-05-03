@@ -37,10 +37,13 @@ namespace OOP_nákladák_Lizna
         }
         public void Zobraz (Nakladak nakladak, TextBlock textBlock)
         {
-            textBlock.Text = nakladak.Nazev.ToString() + "\n";
-            textBlock.Text = "Nosnost = " + nakladak.Nosnost.ToString() + "kg" + "\n";
-            textBlock.Text = "Naloženo =" + nakladak.Naklad.ToString() + "kg" + "\n";
-            textBlock.Text = "Celková vzdálenost =" + nakladak.Celkova_vzdalenost.ToString() + "km" + "\n";
+            textBlock.Text = nakladak.Nazev + "\n";
+            textBlock.Text += "Nosnost = " + nakladak.Nosnost.ToString() + "kg" + "\n";
+            textBlock.Text += "Naloženo =" + nakladak.Naklad.ToString() + "kg" + "\n";
+            textBlock.Text += "Celková vzdálenost =" + nakladak.Celkova_vzdalenost.ToString() + "km" + "\n";
+            textBlock.Text += "Palivo =" + nakladak.Palivo.ToString() + "l" + "\n";
+            textBlock.Text += "Objem nádrže =" + nakladak.Objem_nadrzre + "l" + "\n";
+            textBlock.Text += "Spotřeba paliva =" + nakladak.Spotreba_nadrze + "l" + "\n";
         }
 
     }
