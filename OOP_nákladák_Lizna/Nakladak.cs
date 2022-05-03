@@ -8,7 +8,7 @@ namespace OOP_nákladák_Lizna
 {
     public class Nakladak
     {
-        public string Nazev = "";
+        public string Nazev { get; set; }
         private int palivo;
         public int Palivo { get => palivo; }
         public int Nosnost { get; set; }
@@ -19,11 +19,14 @@ namespace OOP_nákladák_Lizna
         private int celkova_vzdalenost;
         public int Celkova_vzdalenost { get => celkova_vzdalenost; }
 
-        public void Nakladak()
+        public Nakladak()
         {
             Nazev = "";
             naklad = 0;
             Nosnost = 10000;
+            palivo = 0;
+            celkova_vzdalenost = 0;
+            Objem_nadrzre = 2000;
         }
     }
   

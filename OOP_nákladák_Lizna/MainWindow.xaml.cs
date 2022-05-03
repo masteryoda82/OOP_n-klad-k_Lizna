@@ -37,9 +37,10 @@ namespace OOP_nákladák_Lizna
         }
         public void Zobraz (Nakladak nakladak, TextBlock textBlock)
         {
-            textBlock.Text = nakladak.Nazev + "\n";
-            textBlock.Text = "Nosnost= " + nakladak.Nosnost + "kg" + "\n";
-            textBlock.Text = "Naloženo =" + nakladak.Naklad + "kg" + "\n";
+            textBlock.Text = nakladak.Nazev.ToString() + "\n";
+            textBlock.Text = "Nosnost = " + nakladak.Nosnost.ToString() + "kg" + "\n";
+            textBlock.Text = "Naloženo =" + nakladak.Naklad.ToString() + "kg" + "\n";
+            textBlock.Text = "Celková vzdálenost =" + nakladak.Celkova_vzdalenost.ToString() + "km" + "\n";
         }
 
     }
