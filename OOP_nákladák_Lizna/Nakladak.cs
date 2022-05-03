@@ -6,24 +6,30 @@ using System.Threading.Tasks;
 
 namespace OOP_nákladák_Lizna
 {
-    internal class Nakladak
+    public class Nakladak
     {
         public string Nazev = "";
         private int palivo;
         public int Palivo { get => palivo; }
-        public string Nosnost = "";
-        public  string Objem_nadrzre = "";
+        public int Nosnost { get; set; }
+        public  int Objem_nadrzre { get; }
         private int naklad;
         public int Naklad { get => naklad; }
-        public string Spotreba_nadrze = "";
+        public int Spotreba_nadrze { get; }
         private int celkova_vzdalenost;
         public int Celkova_vzdalenost { get => celkova_vzdalenost; }
 
+        public void Nakladak()
+        {
+            Nazev = "";
+            naklad = 0;
+            Nosnost = 10000;
+        }
     }
-    public  Nakladak()
-    {
+  
+    
 
-    }
+    
     
         
     

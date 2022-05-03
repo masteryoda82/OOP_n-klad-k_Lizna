@@ -30,13 +30,16 @@ namespace OOP_nákladák_Lizna
             tatra = new Nakladak();
             tatra.Nazev = "Tatra";
             Zobraz(tatra, txtb1);
+
             man = new Nakladak();
             man.Nazev = "Man";
             Zobraz(man, txtb2);
         }
         public void Zobraz (Nakladak nakladak, TextBlock textBlock)
         {
-
+            textBlock.Text = nakladak.Nazev + "\n";
+            textBlock.Text = "Nosnost= " + nakladak.Nosnost + "kg" + "\n";
+            textBlock.Text = "Naloženo =" + nakladak.Naklad + "kg" + "\n";
         }
 
     }
