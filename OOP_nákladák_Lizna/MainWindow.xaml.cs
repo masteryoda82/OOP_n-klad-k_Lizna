@@ -46,5 +46,36 @@ namespace OOP_nákladák_Lizna
             textBlock.Text += "Spotřeba paliva =" + nakladak.Spotreba_nadrze + "l" + "\n";
         }
 
+        private void nalozit_Click(object sender, RoutedEventArgs e)
+        {
+            tatra.nalozit();
+            man.nalozit();
+            Zobraz(tatra, txtb1);
+            Zobraz(man, txtb2);
+        }
+
+        private void vylozit_Click(object sender, RoutedEventArgs e)
+        {
+            tatra.vylozit();
+            man.vylozit();
+            Zobraz(tatra, txtb1);
+            Zobraz(man, txtb2);
+        }
+
+        private void natankovat_Click(object sender, RoutedEventArgs e)
+        {
+            tatra.natankovat();
+            man.natankovat();
+            Zobraz(tatra, txtb1);
+            Zobraz(man, txtb2);
+        }
+
+        private void jet_Click(object sender, RoutedEventArgs e)
+        {
+            tatra.jet();
+            man.jet();
+            Zobraz(tatra, txtb1);
+            Zobraz(man, txtb2);
+        }
     }
 }

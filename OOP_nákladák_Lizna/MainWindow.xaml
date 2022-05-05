@@ -9,7 +9,10 @@
     <Grid>
         <TextBlock x:Name="txtb1" HorizontalAlignment="Left" Margin="40,34,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="373" Width="125"/>
         <TextBlock x:Name="txtb2" HorizontalAlignment="Left" Margin="564,34,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="373" Width="125"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="219,52,0,0" VerticalAlignment="Top" Height="46" Width="79"/>
+        <Button x:Name="nalozit" Content="Naložit" HorizontalAlignment="Left" Margin="219,52,0,0" VerticalAlignment="Top" Height="46" Width="79" Click="nalozit_Click"/>
+        <Button x:Name="vylozit" Content="Vyložit" HorizontalAlignment="Left" Margin="410,52,0,0" VerticalAlignment="Top" Height="46" Width="79" Click="vylozit_Click"/>
+        <Button x:Name="natankovat" Content="Natankovat" HorizontalAlignment="Left" Margin="219,142,0,0" VerticalAlignment="Top" Width="79" Height="46" Click="natankovat_Click"/>
+        <Button x:Name="jet" Content="Jet" HorizontalAlignment="Left" Margin="410,142,0,0" VerticalAlignment="Top" Width="79" Height="46" Click="jet_Click"/>
 
     </Grid>
 </Window>
