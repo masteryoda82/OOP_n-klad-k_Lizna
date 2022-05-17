@@ -77,7 +77,7 @@ namespace OOP_nákladák_Lizna
            
             else
             {
-                palivo -= 20;
+                palivo -= 2;
                 celkova_vzdalenost += 10;
             }
         }
