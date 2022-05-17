@@ -24,7 +24,7 @@ namespace OOP_nákladák_Lizna
             Nazev = "";
             naklad = 0;
             Nosnost = 12000;
-            palivo = 0;
+            palivo = 190;
             celkova_vzdalenost = 0;
             Objem_nadrzre = 200;
             Spotreba_nadrze = 20;
