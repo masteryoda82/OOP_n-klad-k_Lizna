@@ -43,7 +43,8 @@ namespace OOP_nákladák_Lizna
             textBlock.Text += "Celková vzdálenost =" + nakladak.Celkova_vzdalenost.ToString() + "km" + "\n";
             textBlock.Text += "Palivo =" + nakladak.Palivo.ToString() + "l" + "\n";
             textBlock.Text += "Objem nádrže =" + nakladak.Objem_nadrzre + "l" + "\n";
-            textBlock.Text += "Spotřeba paliva =" + nakladak.Spotreba_nadrze + "l" + "\n";
+            textBlock.Text += "Spotřeba paliva =" + nakladak.Spotreba_nadrze + "l/100km" + "\n";
+            textBlock.Text += "Peníze =" + nakladak.Penize + "Kč";
         }
 
         private void nalozit_Click(object sender, RoutedEventArgs e)
@@ -76,6 +77,14 @@ namespace OOP_nákladák_Lizna
             man.jet();
             Zobraz(tatra, txtb1);
             Zobraz(man, txtb2);
+        }
+
+        private void vyplata_Click(object sender, RoutedEventArgs e)
+        {
+            tatra.výplata();
+            man.výplata();
+            Zobraz(tatra, txtb1);
+            Zobraz (man, txtb2);
         }
     }
 }

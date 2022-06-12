@@ -19,15 +19,19 @@ namespace OOP_nákladák_Lizna
         private int celkova_vzdalenost;
         public int Celkova_vzdalenost { get => celkova_vzdalenost; }
 
+        private int penize;
+        public int Penize { get => penize; }
+
         public Nakladak()
         {
             Nazev = "";
             naklad = 0;
             Nosnost = 12000;
-            palivo = 190;
+            palivo = 180;
             celkova_vzdalenost = 0;
-            Objem_nadrzre = 200;
+            Objem_nadrzre = 500;
             Spotreba_nadrze = 20;
+            penize = 2000 ;
         }
 
         public void nalozit()
@@ -36,9 +40,11 @@ namespace OOP_nákladák_Lizna
             {
                
                 naklad += 0;
+                
             }
             else
             {
+              
               naklad += 1000;
             }
            
@@ -48,22 +54,26 @@ namespace OOP_nákladák_Lizna
             if (naklad == 0)
             {
                 naklad -= 0;
+                
             }
             else
             {
+                
                 naklad -= 1000;
             }
         }
 
         public void natankovat()
         {
-            if (palivo == 200)
+            if (palivo == 500)
             {
                 palivo += 0;
+                penize -= 0;
             }
             else
             {
-                palivo += 10;
+                penize -= 780;
+                palivo += 20;
             }
         }
 
@@ -74,11 +84,24 @@ namespace OOP_nákladák_Lizna
                 palivo -= 0;
                 celkova_vzdalenost += 0;
             }
-           
+
             else
             {
                 palivo -= 2;
                 celkova_vzdalenost += 10;
+            }
+            
+
+        }   
+        public void výplata()
+        {
+            if (penize < 10000)
+            {
+                penize += 90000;
+            }
+            else
+            {
+                penize += 0;
             }
         }
     }

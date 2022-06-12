@@ -13,6 +13,7 @@
         <Button x:Name="vylozit" Content="Vyložit" HorizontalAlignment="Left" Margin="410,52,0,0" VerticalAlignment="Top" Height="46" Width="79" Click="vylozit_Click"/>
         <Button x:Name="natankovat" Content="Natankovat" HorizontalAlignment="Left" Margin="219,142,0,0" VerticalAlignment="Top" Width="79" Height="46" Click="natankovat_Click"/>
         <Button x:Name="jet" Content="Jet" HorizontalAlignment="Left" Margin="410,142,0,0" VerticalAlignment="Top" Width="79" Height="46" Click="jet_Click"/>
+        <Button x:Name="vyplata" Content="Výplata" HorizontalAlignment="Left" Margin="321,217,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.545,0.478" Height="46" Width="79" Click="vyplata_Click"/>
 
     </Grid>
 </Window>
