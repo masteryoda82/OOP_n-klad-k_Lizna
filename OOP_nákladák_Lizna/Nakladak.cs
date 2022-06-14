@@ -36,7 +36,7 @@ namespace OOP_nákladák_Lizna
 
         public void nalozit()
         {
-            if (naklad == 12000)
+            if (naklad == Nosnost)
             {
                
                 naklad += 0;

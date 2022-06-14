@@ -33,6 +33,7 @@ namespace OOP_nákladák_Lizna
 
             man = new Nakladak();
             man.Nazev = "Man";
+            man.Nosnost = 5000;
             Zobraz(man, txtb2);
         }
         public void Zobraz (Nakladak nakladak, TextBlock textBlock)
